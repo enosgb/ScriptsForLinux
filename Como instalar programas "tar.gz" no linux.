@@ -1,0 +1,45 @@
+
+//o programa dropbox foi usado como exemplo \n
+
+//,mas o procedimento é o mesmo para qualquer programa \n
+
+//basta substituir o "dropbox-lnx.x86_64-1.5.36.tar.gz" pelo arquivo que você quer instalar.
+
+//Com o terminal aberto vá para o diretório onde o arquivo foi baixado.
+
+cd Downloads
+sudo cp dropbox-lnx.x86_64-1.5.36.tar.gz /opt/
+
+
+cd /opt/
+sudo tar -xvf dropbox-lnx.x86_64-1.5.36.tar.gz
+sudo rm -rf dropbox-lnx.x86_64-1.5.36.tar.gz
+
+sudo ln -s /opt/.dropbox-dist/ /usr/bin/dropbox
+
+//Neste momento o programa já pode ser executado pelo terminal mas você pode criar um atalho com as instruções abaixo
+
+gedit /usr/share/applications/dropbox.desktop
+//use o editor de sua preferencia, eu utilizer o gedit.
+// o atalho ".desktop deve conter:"
+
+[Desktop Entry]
+Version=1.0
+Name=Firefox Nightly
+Comment=Browse the World Wide Web
+GenericName=Web Browser
+Keywords=Internet;WWW;Browser;Web;Explorer
+Exec=firefox-nightly
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/opt/firefox/icons/mozicon128.png
+Categories=GNOME;GTK;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+StartupNotify=true
+Actions=NewWindow;
+
+[Desktop Action NewWindow]
+Name=Open a New Window
+Exec=firefox-nightly -new-window
+OnlyShowIn=Unity;
