@@ -1,0 +1,52 @@
+//obteve sucesso com as seguintes configurações:
+
+       _,met$$$$$gg.          enos@debian 
+    ,g$$$$$$$$$$$$$$$P.       ----------- 
+  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64 
+ ,$$P'              `$$$.     Kernel: 4.19.0-16-amd64 
+',$$P       ,ggs.     `$$b:   Uptime: 25 mins 
+`d$$'     ,$P"'   .    $$$    Packages: 2464 (dpkg) 
+ $$P      d$'     ,    $$P    Shell: bash 5.0.3 
+ $$:      $$.   -    ,d$$'    Resolution: 1366x768 
+ $$;      Y$b._   _,d$P'      DE: GNOME 3.30.2 
+ Y$$.    `.`"Y$$$$P"'         Theme: Adwaita [GTK2/3] 
+ `$$b      "-.__              Icons: Adwaita [GTK2/3] 
+  `Y$$                        Terminal: gnome-terminal 
+   `Y$$.                      CPU: AMD FX-6300 (6) @ 3.500GHz 
+     `$$b.                    GPU: AMD ATI Polaris11 
+       `Y$$b.                 Memory: 1604MiB / 7960MiB 
+          `"Y$b._
+              `"""                                    
+
+sudo dpkg --add-architecture i386
+
+sudo apt install wine wine64
+
+sudo apt install mesa-vulkan-drivers
+
+sudo apt install vulkan-utils
+
+//verificar o retorno ao executar comando -> vulkaninfo
+
+vulkaninfo
+
+/pode ser que o lutris não se encontre no repositório
+
+sudo apt install lutris 
+
+//caso isto aconteça será necessário entrar no site oficial do lutris e seguir as instruções de intalação para sua distro
+
+//após instalar o lutris é recomendado inicia-lo pelo terminal para ver se ele retorna falta de alguma dependência
+// se sim basta instalar a dependência necessária.
+// no meu caso ele reclamou da falta do wine32.
+
+/pode ser que o playonlinux não se encontre no repositório
+
+sudo apt install playonlinux
+
+//caso isto aconteça será necessário entrar no site oficial do playonlinux e seguir as instruções de intalação para sua distro.
+
+
+
+
+
