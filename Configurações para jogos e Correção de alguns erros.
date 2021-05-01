@@ -40,6 +40,12 @@ sudo apt install lutris
 // se sim basta instalar a dependência necessária.
 // no meu caso ele reclamou da falta do wine32.
 
+//erro no lutris 
+Non existent path: /home/enos/.local/share/lutris/runtime/lib64
+//solução
+wget https://cdn.discordapp.com/attachments/538903130704838656/796102070825779250/dxvk_versions.json 5 -P $HOME/.local/share/lutris/runtime/dxvk
+
+
 /pode ser que o playonlinux não se encontre no repositório
 
 sudo apt install playonlinux
