@@ -29,4 +29,5 @@ sudo dpkg -i mysql-workbench-community_8.0.13-1ubuntu18.10_amd64.deb
 //se não existir as dependências o comando abaixo vai remover o mysql-workbench é vecê terá que reinstala-lo e resolver as dependências manualmente.
 sudo apt install -f
 
-sudo dpkg -i mysql-workbench-community_8.0.16-1ubuntu18.04_amd64.deb
+sudo dpkg -i mysql-workbench-community_8.0.13-1ubuntu18.10_amd64.deb
+
