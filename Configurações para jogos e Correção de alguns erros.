@@ -53,6 +53,7 @@ sudo apt install playonlinux
 //caso isto aconteça será necessário entrar no site oficial do playonlinux e seguir as instruções de intalação para sua distro.
 
 
+//Configs for stem CSGO and others
 
-
+gamemoderun RADV_PERFTEST=aco %command%
 
