@@ -24,8 +24,9 @@ sudo apt install wine wine64
 
 sudo apt install mesa-vulkan-drivers
 
-sudo apt install vulkan-utils
+sudo apt install vulkan-tools
 
+sudo apt install vulkan-utils
 //verificar o retorno ao executar comando -> vulkaninfo
 
 vulkaninfo
